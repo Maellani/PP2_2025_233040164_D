@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package id.ac.unpas.pp2_2025_233040164_d.modul05;
+package id.ac.unpas.modul05;
 
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
@@ -31,4 +31,5 @@ public class Latihan1 {
         });
     }
 }
+
 
