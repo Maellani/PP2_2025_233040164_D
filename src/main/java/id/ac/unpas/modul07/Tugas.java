@@ -51,7 +51,7 @@ public class Tugas extends JFrame{
 
         btnSimpan.addActionListener(e -> prosesSimpan());
 
-        // TOMBOL RESET (TUGAS)
+        // Tombol Reset
         btnReset.addActionListener(e -> {
             txtNama.setText("");
             txtNilai.setText("");
@@ -72,7 +72,7 @@ public class Tugas extends JFrame{
         JScrollPane scrollPane = new JScrollPane(tableData);
         panel.add(scrollPane, BorderLayout.CENTER);
 
-        // TOMBOL HAPUS (TUGAS)
+        // Tombol Hapus
         JButton btnHapus = new JButton("Hapus Data");
 
         btnHapus.addActionListener(e -> {
@@ -100,21 +100,21 @@ public class Tugas extends JFrame{
         String matkul = (String) cmbMatkul.getSelectedItem();
         String strNilai = txtNilai.getText();
 
-        // VALIDASI NAMA KOSONG
+        // Validasi Nama Kosong
         if (nama.trim().isEmpty()) {
             JOptionPane.showMessageDialog(this, "Nama tidak boleh kosong!",
                     "Error Validasi", JOptionPane.ERROR_MESSAGE);
             return;
         }
 
-        // VALIDASI MINIMAL 3 KARAKTER (TUGAS)
+        // Validasi Minimal 3 Karakter
         if (nama.trim().length() < 3) {
             JOptionPane.showMessageDialog(this, "Nama minimal terdiri dari 3 karakter!",
                     "Error Validasi", JOptionPane.ERROR_MESSAGE);
             return;
         }
 
-        // VALIDASI NILAI ANGKA
+        // Validasi Nilai Angka
         int nilai;
         try {
             nilai = Integer.parseInt(strNilai);
